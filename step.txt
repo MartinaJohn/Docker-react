@@ -1,0 +1,6 @@
+docker run -d -it --rm -p 3000:3000 --name ecommerce-container ecommerce-image
+it is runnimg the built version
+
+rebuild:
+docker build -t ecommerce-image .
+docker run -dp 3000:3000 ecommerce-image
